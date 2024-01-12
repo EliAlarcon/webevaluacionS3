@@ -14,13 +14,12 @@
             <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
             {% for product in products %}
                 <a href="" class="d-block product-item rounded">
-                    <img src="{{product.image.url}}" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">{{product.content}}</h4>
+                    <img src="{{product.image.url}}" alt=""/>
+                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n4 mx-4">
+                        <h3 class="text-primary">{{product.title}}</h3>
                         <span class="text-body">{{product.content}}</span>
                     </div>
                 </a>
-                <img src="{{product.image.url}}" alt="">
             {% endfor %}
             </div>
     <!-- Products End -->
